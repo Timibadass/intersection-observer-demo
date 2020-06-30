@@ -13,7 +13,8 @@
 			<p>Loading...</p>
 		</div>
 		<div ref="articlesContainer" class="news--empty">
-			<p>Loading...</p>
+			<p v-if="articles.length < 100">Loading...</p>
+			<p v-else>No more top news for now.</p>
 		</div>
 	</div>
 </template>
